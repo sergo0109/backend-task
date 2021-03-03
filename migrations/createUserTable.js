@@ -1,5 +1,7 @@
-const client = require("../DataBase/connectionDB")
-client.connect()
-.then(()=>client.query("create table users (name varchar(255), username varchar(255), email varchar(255), age varchar(255), phone varchar(255), pass varchar(255),id serial )"))
-.catch((e)=>console.log(e))
-.finally(()=>client.end())
+const model = require ("../ORM/modelDefine")
+
+model.sync()
+
+
+
+

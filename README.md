@@ -1,2 +1,4 @@
 #backend-task
-run createUserTable.js for first
+1 open DataBase/connectionDB.js and add your postgres configurations
+2 run migrations/createUserTable.js 
+# backend-task
